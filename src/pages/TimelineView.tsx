@@ -30,6 +30,20 @@ function TimelineView() {
     setSelectedType(type === selectedType ? null : type);
   };
 
+  const handleTypeText = (type: string) => {
+    if(type === 'maintenance'){
+      return 'Ремонтні роботи'
+    }
+
+    if(type === 'news'){
+      return 'Новини'
+    }
+
+    if(type === 'improvements'){
+      return 'Покращення'
+    }
+  }
+
   const clearFilters = () => {
     setStartDate('');
     setEndDate('');
@@ -47,7 +61,7 @@ function TimelineView() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Journey</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">ОСББ Лесі Українки 38Б</h1>
           <p className="text-lg text-gray-600 mb-8">Tracking our progress through time</p>
 
           {/* Filters */}
@@ -87,7 +101,7 @@ function TimelineView() {
                           : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                         }`}
                     >
-                      {type.charAt(0).toUpperCase() + type.slice(1)}
+                      {handleTypeText(type)}
                     </button>
                   ))}
                 </div>
@@ -99,7 +113,7 @@ function TimelineView() {
                 className="flex items-center justify-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-gray-100 hover:bg-gray-200 transition-colors w-[140px]"
               >
                 <ArrowUpDown className="w-4 h-4" />
-                {sortOrder === 'desc' ? 'Newest First' : 'Oldest First'}
+                {sortOrder === 'desc' ? 'Спочатку новіші' : 'Спочатку старіші'}
               </button>
 
               {/* Clear Filters Button */}
@@ -113,7 +127,7 @@ function TimelineView() {
                   }`}
               >
                 <X className="w-4 h-4" />
-                Clear Filters
+                Очистити
               </button>
             </div>
           </div>

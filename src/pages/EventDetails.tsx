@@ -9,19 +9,19 @@ const typeConfig = {
     icon: Wrench,
     color: 'bg-amber-500',
     textColor: 'text-amber-600',
-    label: 'Maintenance'
+    label: 'Ремонтні роботи'
   },
   news: {
     icon: Newspaper,
     color: 'bg-blue-500',
     textColor: 'text-blue-600',
-    label: 'News'
+    label: 'Новини'
   },
   improvements: {
     icon: Sparkles,
     color: 'bg-green-500',
     textColor: 'text-green-600',
-    label: 'Improvements'
+    label: 'Покращення'
   }
 };
 
@@ -35,13 +35,13 @@ const EventDetails = () => {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12 px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">Event not found</h1>
+          <h1 className="text-2xl font-bold text-gray-900 mb-4">Подію не знайдено</h1>
           <Link 
             to="/"
             className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Timeline
+            Назад до списку
           </Link>
         </div>
       </div>
@@ -73,7 +73,7 @@ const EventDetails = () => {
             className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Timeline
+            Назад до списку
           </Link>
 
           <article className="bg-white rounded-lg shadow-lg overflow-hidden">

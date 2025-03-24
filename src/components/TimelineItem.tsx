@@ -18,19 +18,19 @@ const typeConfig = {
     icon: Wrench,
     color: 'bg-amber-500',
     textColor: 'text-amber-600',
-    label: 'Maintenance'
+    label: 'Ремонтні роботи'
   },
   news: {
     icon: Newspaper,
     color: 'bg-blue-500',
     textColor: 'text-blue-600',
-    label: 'News'
+    label: 'Новини'
   },
   improvements: {
     icon: Sparkles,
     color: 'bg-green-500',
     textColor: 'text-green-600',
-    label: 'Improvements'
+    label: 'Покращення'
   }
 };
 
@@ -188,7 +188,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
                 to={`/event/${id}`}
                 className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors"
               >
-                More Info
+                Більше інформації
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
