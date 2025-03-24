@@ -47,7 +47,7 @@ function TimelineView() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">ОСББ Лесі Українки 38Б</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Journey</h1>
           <p className="text-lg text-gray-600 mb-8">Tracking our progress through time</p>
 
           {/* Filters */}
@@ -119,19 +119,36 @@ function TimelineView() {
           </div>
         </div>
         
-        <div className="space-y-24">
-          {filteredData.map((item, index) => (
-            <TimelineItem
-              key={item.id}
-              id={item.id}
-              date={item.date}
-              title={item.title}
-              description={item.description}
-              images={item.images}
-              type={item.type}
-              isLeft={index % 2 === 0}
-            />
-          ))}
+        {/* Timeline container */}
+        <div className="relative">
+          {/* Timeline line - only show when there are events */}
+          {filteredData.length > 0 && (
+            <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-blue-200 transform -translate-x-1/2" />
+          )}
+          
+          {filteredData.length > 0 ? (
+            /* Timeline items */
+            <div className="space-y-24">
+              {filteredData.map((item, index) => (
+                <TimelineItem
+                  key={item.id}
+                  id={item.id}
+                  date={item.date}
+                  title={item.title}
+                  description={item.description}
+                  images={item.images}
+                  type={item.type}
+                  isLeft={index % 2 === 0}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-16">
+              <p className="text-2xl font-bold text-gray-700">
+                Немає івентів для показу. Відредагуйте або очистіть фільтри
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>

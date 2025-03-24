@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Wrench, Newspaper, Sparkles, ArrowRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Wrench, Newspaper, Sparkles, ArrowRight, Image as ImageIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface TimelineItemProps {
@@ -73,6 +73,8 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
     });
   };
 
+  const defaultImage = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200";
+
   return (
     <div className="relative">
       {/* Timeline line */}
@@ -111,27 +113,39 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             {/* Image slider */}
             <div className="relative aspect-[16/9] overflow-hidden bg-gray-100">
-              <div 
-                className="flex transition-transform duration-500 ease-in-out h-full"
-                style={{ transform: `translateX(-${currentImage * 100}%)` }}
-              >
-                {images.map((image, index) => (
-                  <div key={index} className="relative w-full h-full flex-shrink-0">
-                    {/* Loading skeleton */}
-                    {!imageLoaded[index] && (
-                      <div className="absolute inset-0 bg-gray-200 animate-pulse" />
-                    )}
-                    <img
-                      src={image}
-                      alt={`${title} - Image ${index + 1}`}
-                      onLoad={(e) => handleImageLoad(index, e)}
-                      className={`w-full h-full object-contain bg-gray-100 transition-opacity duration-300 ${
-                        imageLoaded[index] ? 'opacity-100' : 'opacity-0'
-                      }`}
-                    />
+              {images.length > 0 ? (
+                <div 
+                  className="flex transition-transform duration-500 ease-in-out h-full"
+                  style={{ transform: `translateX(-${currentImage * 100}%)` }}
+                >
+                  {images.map((image, index) => (
+                    <div key={index} className="relative w-full h-full flex-shrink-0">
+                      {!imageLoaded[index] && (
+                        <div className="absolute inset-0 bg-gray-200 animate-pulse" />
+                      )}
+                      <img
+                        src={image}
+                        alt={`${title} - Image ${index + 1}`}
+                        onLoad={(e) => handleImageLoad(index, e)}
+                        className={`w-full h-full object-cover transition-opacity duration-300 ${
+                          imageLoaded[index] ? 'opacity-100' : 'opacity-0'
+                        }`}
+                      />
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="relative w-full h-full">
+                  <img
+                    src={defaultImage}
+                    alt={title}
+                    className="w-full h-full object-cover opacity-50"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <ImageIcon className="w-12 h-12 text-gray-400" />
                   </div>
-                ))}
-              </div>
+                </div>
+              )}
               
               {/* Navigation arrows */}
               {images.length > 1 && (
