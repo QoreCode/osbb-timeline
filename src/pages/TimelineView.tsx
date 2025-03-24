@@ -113,7 +113,7 @@ function TimelineView() {
                 className="flex items-center justify-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-gray-100 hover:bg-gray-200 transition-colors w-[140px]"
               >
                 <ArrowUpDown className="w-4 h-4" />
-                {sortOrder === 'desc' ? 'Спочатку новіші' : 'Спочатку старіші'}
+                {sortOrder === 'desc' ? 'Новіші' : 'Старіші'}
               </button>
 
               {/* Clear Filters Button */}
@@ -158,7 +158,7 @@ function TimelineView() {
             </div>
           ) : (
             <div className="text-center py-16">
-              <p className="text-2xl font-bold text-gray-700">
+              <p className="text-2xl font-bold text-gray-400">
                 Немає івентів для показу. Відредагуйте або очистіть фільтри
               </p>
             </div>
