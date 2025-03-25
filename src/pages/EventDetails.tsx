@@ -111,7 +111,7 @@ const EventDetails = () => {
               
               <div className="prose prose-lg max-w-none">
                 <p className="text-gray-600 leading-relaxed whitespace-pre-line">
-                  {event.description}
+                  <div dangerouslySetInnerHTML={{__html: event.description}} />
                 </p>
               </div>
 

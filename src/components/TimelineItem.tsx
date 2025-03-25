@@ -66,7 +66,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   const formatDate = (dateStr: string) => {
     const [day, month, year] = dateStr.split('/');
     const date = new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
-    return date.toLocaleDateString('en-GB', {
+    return date.toLocaleDateString('uk-GB', {
       day: '2-digit',
       month: 'long',
       year: 'numeric'
@@ -120,16 +120,11 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
                 >
                   {images.map((image, index) => (
                     <div key={index} className="relative w-full h-full flex-shrink-0">
-                      {!imageLoaded[index] && (
-                        <div className="absolute inset-0 bg-gray-200 animate-pulse" />
-                      )}
                       <img
                         src={image}
                         alt={`${title} - Image ${index + 1}`}
                         onLoad={(e) => handleImageLoad(index, e)}
-                        className={`w-full h-full object-cover transition-opacity duration-300 ${
-                          imageLoaded[index] ? 'opacity-100' : 'opacity-0'
-                        }`}
+                        className={`w-full h-full object-cover transition-opacity duration-300 opacity-100`}
                       />
                     </div>
                   ))}

@@ -12,24 +12,23 @@
     },
     {
       "id": "new-electric-board",
-      "date": "01/03/2024",
-      "title": "AI Integration Platform Launch",
+      "date": "13/02/2025",
+      "title": "Заміна щитової на другому поверсі",
       "type": "improvements",
-      "description": "Today marks the successful launch of our revolutionary AI Integration Platform, designed to seamlessly bridge the gap between various artificial intelligence models and business applications. This groundbreaking system enables organizations to harness the power of multiple AI engines through a single, unified interface. The platform features advanced neural network optimization, real-time model switching, and automated performance monitoring, resulting in a 200% improvement in processing efficiency. Our innovative approach to API standardization has reduced integration time from weeks to mere hours, while maintaining enterprise-grade security protocols. The platform's adaptive learning capabilities ensure continuous improvement in accuracy and performance, with initial tests showing a 45% reduction in false positives compared to traditional solutions. We've also implemented a groundbreaking feature that allows for real-time model comparison and automated selection of the most suitable AI engine for specific tasks, leading to significant cost savings and improved outcomes for our clients.",
+      "description": "Черговий поверх реставровано поетажну щитову. Безлад і хаос перетворено на порядок. Порівняти як було і як стало можете на фотографії. Також додаткове відро сміття йде у небуття. Залишилось лише три поверхи до повної реставрації щитових.<br>Серед цікавого: ціни на роботу і комплектуючі виросли за останній місяць. До прикладу: <ul><li><b>Клемна колодка</b> - з 522грн до 546грн</li><li><b>Дін-рейка</b> - з 59грн до 76грн</li><li><b>Автоматичний вимикач RESI9</b> - з 1620грн до 1782грн</li><ul>І так далі по списку, особливо виросла вартість робіт. Загалом в Грудні реконструкція щитової варитувала 6200грн, а в Лютому вже майже 8000грн.<br>Всі списання можна переглянути за посиланням: <a class='link' target='blank' href='https://cabinet.dah-online.com/app/tenant/documents/607e791f-4d3b-4740-8936-2bc9c1b4ffd5'>цим посиланням</a>",
       "images": [
-        "https://images.unsplash.com/photo-1488229297570-58520851e868?auto=format&fit=crop&q=80&w=1200",
-        "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=1200",
-        "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200"
+        "https://res.cloudinary.com/dcs6v3lpc/image/upload/v1742825933/jteaxnstxizt0ujtostn.jpg",
+        "https://res.cloudinary.com/dcs6v3lpc/image/upload/v1742825943/hvj0my29cheobvwbrkdl.jpg"
       ]
     },
     {
       "id": "vouting-winter-2025",
       "date": "10/03/2024",
-      "title": "New Partnership Announcement",
+      "title": "Загальні збори зима 2025 та голосування",
       "type": "news",
-      "description": "We are thrilled to announce our strategic partnership with TechForward, a leading innovator in sustainable technology solutions. This collaboration will enable us to expand our reach and deliver cutting-edge solutions to a broader market while maintaining our commitment to environmental responsibility. The partnership focuses on developing eco-friendly technology solutions that will help businesses reduce their carbon footprint while improving operational efficiency.",
+      "description": "<b>25 Січня 2025 року</b> відбулись загальні збори, на зборах були підняти наступні питання: <ul><li>Щодо реконструкції поєтажних щитових <span style='color: green; font-weight: bold'>(рішення прийнято)</span></li><li>Щодо укладання договору на вивезення твердих побутових відходів як з колективним споживачем <span style='color: green; font-weight: bold'>(рішення прийнято)</span></li><li>Про прийняття рішення щодо проведення сертифікації енергетичної ефективності будівлі <span style='color: green; font-weight: bold'>(рішення прийнято)</span></li><li>Про прийняття рішення щодо впровадження проекту енергомодернізації будинку <span style='color: green; font-weight: bold'>(рішення прийнято)</span></li></ul><br><br>Детальну інформацію можна прочитати за <a class='link' target='blank' href='https://cabinet.dah-online.com/app/tenant/documents/607e791f-4d3b-4740-8936-2bc9c1b4ffd5'>цим посиланням</a>",
       "images": [
-        "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1200"
+        "https://res.cloudinary.com/dcs6v3lpc/image/upload/v1742828722/pwh4hq1ikffxx3fahtji.png"
       ]
     }
   ]
