@@ -178,7 +178,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 
             <div className="p-6">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">{title}</h3>
-              <p className="text-gray-600 leading-relaxed line-clamp-5 mb-4">{description}</p>
+              <p className="text-gray-600 leading-relaxed line-clamp-5 mb-4"><div dangerouslySetInnerHTML={{__html: description}} /></p>
               <Link 
                 to={`/event/${id}`}
                 className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors"
