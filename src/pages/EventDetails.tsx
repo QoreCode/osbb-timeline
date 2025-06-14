@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Wrench, Newspaper, Sparkles, ZoomIn, Image as ImageIcon } from 'lucide-react';
 import timelineData from '../data/timeline.json';
@@ -48,7 +48,7 @@ const EventDetails = () => {
     );
   }
 
-  const TypeIcon = typeConfig[event.type].icon;
+  const TypeIcon = typeConfig[event.type as 'maintenance' | 'news' | 'improvements'].icon;
   const defaultImage = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200";
 
   const openModal = (index: number) => {
@@ -65,7 +65,7 @@ const EventDetails = () => {
   };
 
   return (
-    <>
+    <div>
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <Link 
@@ -101,18 +101,18 @@ const EventDetails = () => {
             <div className="p-8">
               <div className="flex items-center gap-4 mb-4">
                 <time className="text-sm text-gray-500">{event.date}</time>
-                <div className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium ${typeConfig[event.type].textColor} bg-opacity-10 ${typeConfig[event.type].color.replace('bg-', 'bg-')}`}>
+                <div className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium ${typeConfig[event.type as 'maintenance' | 'news' | 'improvements'].textColor} bg-opacity-10 ${typeConfig[event.type as 'maintenance' | 'news' | 'improvements'].color.replace('bg-', 'bg-')}`}>
                   <TypeIcon className="w-4 h-4" />
-                  {typeConfig[event.type].label}
+                  {typeConfig[event.type as 'maintenance' | 'news' | 'improvements'].label}
                 </div>
               </div>
 
               <h1 className="text-3xl font-bold text-gray-900 mb-6">{event.title}</h1>
               
               <div className="prose prose-lg max-w-none">
-                <p className="text-gray-600 leading-relaxed whitespace-pre-line">
+                <div className="text-gray-600 leading-relaxed whitespace-pre-line">
                   <div dangerouslySetInnerHTML={{__html: event.description}} />
-                </p>
+                </div>
               </div>
 
               {event.images.length > 1 && (
@@ -152,7 +152,7 @@ const EventDetails = () => {
           onNext={handleNext}
         />
       )}
-    </>
+    </div>
   );
 };
 

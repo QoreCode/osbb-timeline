@@ -55,9 +55,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
     setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
   };
 
-  const handleImageLoad = (index: number, event: React.SyntheticEvent<HTMLImageElement>) => {
-    const img = event.target as HTMLImageElement;
-    const aspectRatio = img.naturalWidth / img.naturalHeight;
+  const handleImageLoad = (index: number) => {
     const newImageLoaded = [...imageLoaded];
     newImageLoaded[index] = true;
     setImageLoaded(newImageLoaded);
@@ -123,7 +121,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
                       <img
                         src={image}
                         alt={`${title} - Image ${index + 1}`}
-                        onLoad={(e) => handleImageLoad(index, e)}
+                        onLoad={() => handleImageLoad(index)}
                         className={`w-full h-full object-cover transition-opacity duration-300 opacity-100`}
                       />
                     </div>

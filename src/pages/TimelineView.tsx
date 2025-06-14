@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import TimelineItem from '../components/TimelineItem';
 import { Calendar, Filter, X, ArrowUpDown } from 'lucide-react';
 import timelineData from '../data/timeline.json';
@@ -151,7 +151,7 @@ function TimelineView() {
                   title={item.title}
                   description={item.description}
                   images={item.images}
-                  type={item.type}
+                  type={item.type as 'maintenance' | 'news' | 'improvements'}
                   isLeft={index % 2 === 0}
                 />
               ))}
