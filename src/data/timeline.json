@@ -3,7 +3,7 @@
     {
       "id": "new-osbb-timeline-site-release",
       "date": "25/03/2025",
-      "title": "Новий сайт ",
+      "title": "Новий сайт",
       "type": "news",
       "description": "Нарешті реалізувалась моя мрія - створити сайт в якому ми будемо фіксувати всі зміни які відбуваються в нашому ОСББ. Данний сайт буде доповнюватись інформацією по мірі того як вона буде з'являтись. З цікавого - данний сайт я створив майже повністтю виключно інструментами штучного інтелекту. Також я зробив мінімальною ширину сайту в 1200px, то ж заходьте будь-ласка переважно з комп'ютерів. Трішки пізніше, можливо, додам мобільну версію.",
       "images": [
@@ -29,6 +29,26 @@
       "description": "<b>25 Січня 2025 року</b> відбулись загальні збори, на зборах були підняти наступні питання: <ul><li>Щодо реконструкції поєтажних щитових <span style='color: green; font-weight: bold'>(рішення прийнято)</span></li><li>Щодо укладання договору на вивезення твердих побутових відходів як з колективним споживачем <span style='color: green; font-weight: bold'>(рішення прийнято)</span></li><li>Про прийняття рішення щодо проведення сертифікації енергетичної ефективності будівлі <span style='color: green; font-weight: bold'>(рішення прийнято)</span></li><li>Про прийняття рішення щодо впровадження проекту енергомодернізації будинку <span style='color: green; font-weight: bold'>(рішення прийнято)</span></li></ul><br><br>Детальну інформацію можна прочитати за <a class='link' target='blank' href='https://cabinet.dah-online.com/app/tenant/documents/607e791f-4d3b-4740-8936-2bc9c1b4ffd5'>цим посиланням</a>",
       "images": [
         "https://res.cloudinary.com/dcs6v3lpc/image/upload/v1742828722/pwh4hq1ikffxx3fahtji.png"
+      ]
+    },
+    {
+      "id": "asphalt-maintenance-2025",
+      "date": "5/06/2025",
+      "title": "Заміна асфальту перед під'їздом і навколо будинку",
+      "type": "improvements",
+      "description": "На початку <b>травня 2025 року</b> міська адміністрація дала згоду на заміну асфальтового покриття навколо нашого будинку. Було виділено матеріали для оновлення <b>150 м²</b> дорожнього покриття. Працівники комунальних служб оперативно зняли верхній шар старого асфальту, готуючи основу для нового. Проте через затяжні дощі виконання робіт довелося тричі відкласти. Лише <b>5 червня 2025 року</b>, коли погодні умови нарешті покращилися, розпочали укладку асфальту. Укладання нового асфальту було завершено всього за один день, однак для повного висихання покриття знадобилося ще два дні. Лише після цього територія довкола будинку набула остаточного вигляду. Свіже рівне покриття помітно змінило загальне враження від прибудинкової площі, надавши фасаду будівлі впорядкованості й приємного, оновленого вигляду.",
+      "images": [
+        "https://res.cloudinary.com/dcs6v3lpc/image/upload/v1749914933/asphalt-maintenance/t57cz4vmlg3shsfwtfzi.jpg",
+        "https://res.cloudinary.com/dcs6v3lpc/image/upload/v1749914933/asphalt-maintenance/bx02rrazjq24rfza0huo.jpg",
+        "https://res.cloudinary.com/dcs6v3lpc/image/upload/v1749914933/asphalt-maintenance/qnsejo6upus9ve5hnzpq.jpg",
+        "https://res.cloudinary.com/dcs6v3lpc/image/upload/v1749914933/asphalt-maintenance/ulbdv3dymgpsjk0x0ex7.jpg",
+        "https://res.cloudinary.com/dcs6v3lpc/image/upload/v1749914932/asphalt-maintenance/ga5zjekvflzhciwrae3r.jpg",
+        "https://res.cloudinary.com/dcs6v3lpc/image/upload/v1749914932/asphalt-maintenance/vzey8uvjzsopoa5n3ekj.jpg",
+        "https://res.cloudinary.com/dcs6v3lpc/image/upload/v1749914932/asphalt-maintenance/hxw4a1iqvf9aozfwknda.jpg",
+        "https://res.cloudinary.com/dcs6v3lpc/image/upload/v1749914932/asphalt-maintenance/js9yusayj2jvxw2ppmx4.jpg",
+        "https://res.cloudinary.com/dcs6v3lpc/image/upload/v1749914932/asphalt-maintenance/rlk5vaiexg8v99doxr24.jpg",
+        "https://res.cloudinary.com/dcs6v3lpc/image/upload/v1749914932/asphalt-maintenance/rjifdo4dej4q84ehvlou.jpg",
+        "https://res.cloudinary.com/dcs6v3lpc/image/upload/v1749914932/asphalt-maintenance/fy57w6t6idi3yh4kc5dc.jpg"
       ]
     }
   ]
